@@ -11,6 +11,7 @@ db = client['heroku_app20526236']
 def home():
 	return render_template('home.html')
 
+'''
 @app.route('/init')
 def init():
 	r = requests.get('http://data.sfgov.org/resource/rqzj-sfat.json')
@@ -20,6 +21,7 @@ def init():
 			truck['loc'] = [float(truck['latitude']), float(truck['longitude'])]
 	db.trucks.insert(trucks)
 	return json.dumps(trucks)
+'''
 
 @app.route('/near/<lat>/<lng>')
 def nearby(lat, lng):
