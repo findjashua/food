@@ -8,7 +8,6 @@ Werkzeug==0.9.4
 altgraph==0.9
 argparse==1.2.1
 bdist-mpkg==0.4.4
-bonjour-py==0.3
 boto==2.9.0
 dargparse==0.2.3
 feedparser==5.1.3
