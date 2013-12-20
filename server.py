@@ -4,8 +4,8 @@ from flask import render_template
 import requests
 import json
 import pymongo
-conn = pymongo.Connection()
-db = conn.food
+client = pymongo.MongoClient('ds061188.mongolab.com', 61188)
+db = client.heroku_app20526236
 
 @app.route('/home')
 def hello_world():
@@ -42,5 +42,4 @@ def delete_loc(truck):
 	return truck
 
 if __name__ == '__main__':
-	app.debug = True
 	app.run()
