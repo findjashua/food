@@ -33,7 +33,7 @@ pyOpenSSL==0.13
 pycrypto==2.6
 pylint==0.28.0
 pymongo==2.4.1
-pyobjc-core==2.3.2a0
+## pyobjc-core==2.3.2a0
 pyobjc-framework-AddressBook==2.3.2a0
 pyobjc-framework-AppleScriptKit==2.3.2a0
 pyobjc-framework-AppleScriptObjC==2.3.2a0
