@@ -4,8 +4,8 @@ from flask import render_template
 import requests
 import json
 import pymongo
-client = pymongo.MongoClient('ds061188.mongolab.com', 61188)
-db = client.heroku_app20526236
+client = pymongo.MongoClient('mongodb://heroku_app20526236:n9tsd8c8ca53nuod7enkbo4ntv@ds061188.mongolab.com:61188/heroku_app20526236')
+db = client['heroku_app20526236']
 
 @app.route('/home')
 def home():
