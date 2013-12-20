@@ -8,7 +8,7 @@ client = pymongo.MongoClient('ds061188.mongolab.com', 61188)
 db = client.heroku_app20526236
 
 @app.route('/home')
-def hello_world():
+def home():
 	return render_template('home.html')
 
 @app.route('/init')
@@ -42,4 +42,5 @@ def delete_loc(truck):
 	return truck
 
 if __name__ == '__main__':
+	app.debug = True
 	app.run()
