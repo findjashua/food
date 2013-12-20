@@ -1,7 +1,7 @@
 function initialize() {
 	var map
 	var mapOptions = {
-		zoom: 15
+		zoom: 16
 	}
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions)
 	if (navigator.geolocation) {
