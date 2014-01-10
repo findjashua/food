@@ -37,7 +37,7 @@ function handleNoGeolocation(errorFlag) {
 function getNearby(map) {
 	loc = map.getCenter()
 	$.ajax({
-		url: '/near/' + loc.nb + '/' + loc.ob,
+		url: '/near/' + loc.lat() + '/' + loc.lng(),
 		success: function(data) {
 			data = $.parseJSON(data)
 			for (var i=0; i<data.length; i++) {
